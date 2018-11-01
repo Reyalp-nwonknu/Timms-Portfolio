@@ -148,7 +148,8 @@ nav {
 		text-align: center;
 		padding-top: 5px;
 		padding-bottom: 5px;
-} 
+}
+
 @media all and (max-width: 500px) {
   .logo {
     /* Make logo smaller by changing it's width */
@@ -166,5 +167,42 @@ nav {
   }
 	.column-4:nth-child(2) {
 	margin-right: 0;
+	}
+}
+
+@keyframes color-change {
+    0% {fill: #edc655;}
+    50% {fill: #fcffad;}
+    100% {fill: #f76414;}
+	
+	.sun {
+		animation: 4s color-change infinite alternate linear;
+	}
+}
+
+@keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+	
+	.cloud-front {
+	animation: 30s cloud-move infinite alternate linear;
+	}
+}
+
+@keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px, 48px);}
+
+	.cloud-back {
+	animation: 34s cloud-move-reverse infinite alternate linear;
+	}
+}
+
+@keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+	
+	.cloud-front {
+	animation: 30s cloud-move infinite alternate linear;
 	}
 }
