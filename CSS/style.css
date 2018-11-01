@@ -17,31 +17,29 @@ body {
 	line-height: 1.6; /* Sets the line-height to 1.6 */
 	}
 
+.logo {
+   margin: 10px;
+   max-width: 300px;
+}
+	
 h1 {
   font-size: 24px;
   text-align: center; /* Centers text */
   font-weight: 700;
-  margin: 10px; /* Adds a 10px outer spacing to all sides*/
 }
 
 h2 {
   font-size: 16px;
   font-weight: 700;
-  margin: 10px; 
 }
 
 h3 {
   font-size: 14px;
   font-weight: 700;
-  margin: 10px;
 }
 
 p {
   margin: 10px;
-}
-
-img {
-   margin: 10px;
 }
 
 a {
@@ -80,8 +78,8 @@ a:active {
   display: inline-block;
 }
 
-button:hover,
-button:focus {
+.button:hover,
+.button:focus {
   cursor: pointer; /* let's the mouse appear as hand when hovering over the button */
   opacity: 0.8; /* Reduces the opactiy of the button to 80% */
 }
@@ -116,10 +114,7 @@ margin-right: 0;
 }
 
 img {
-    height: auto; 
-    width: auto; 
-    max-width: 300px; 
-    max-height: 300px;
+    width: 100%; 
 }
 
 .navigation {
@@ -134,17 +129,30 @@ img {
 }
 
 .telegram {
-    height: auto; 
-    width: auto; 
     max-width: 80px; 
-    max-height: 80px;
 	  float: left;
 }
 
+nav {
+	display: inline-block; 
+	float: right;
+ }
+
+.page-heading {
+		text-align: center;
+		padding-top: 5px;
+		padding-bottom: 5px;
+} 
+
+.contact-info {
+		text-align: center;
+		padding-top: 5px;
+		padding-bottom: 5px;
+} 
 @media all and (max-width: 500px) {
   .logo {
-    /* Make logo smaller by changing it's height */
-    height: 50px;
+    /* Make logo smaller by changing it's width */
+    max-width: 200px;
   }
   h1 {
     /* Reduce font-size of heading */
