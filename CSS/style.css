@@ -206,3 +206,35 @@ nav {
 	animation: 30s cloud-move infinite alternate linear;
 	}
 }
+
+/* Task 2_3 additions */
+
+.project-details {
+  display: none;
+}
+
+/* Vertical align for slide-in text */
+.column-4 {
+  /* other rules... */
+  vertical-align:top;
+}
+
+
+/* Alternative for mouseover
+.column-4 {
+  position: relative;
+}
+
+.project-details {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0; /* Reset this to 0 */ /*
+  padding: 20px;
+  padding-top: 50px;
+  background: rgba(220, 170, 150, 0.9);
+}
+*/
