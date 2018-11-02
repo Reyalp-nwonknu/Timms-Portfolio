@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en" dir="ltr">
 
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
 		<title> Contact Timm the designer </title>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
 	</head>
 	
 	<body>
+	
+	<div class="wrapper"> <!--defines wrapper for whole body of page-->
+	
 		<header>
-			<img src="img/ErgoTrack logo.png" alt="Logo">
+			<img class="logo" src="img/ErgoTrack_logo.png" alt="Logo">
 			<nav>
-				<ul> <!--Links to the subpages-->
+				<ul class="navigation"> <!--Links to the subpages-->
 					<li> <a href="index.html"> Home </a> </li>
 					<li> <a href="about.html"> About </a> </li>
 					<li> <a href="contact.html"> Contact </a> </li>
@@ -20,7 +28,7 @@
 		
 		<h1> Contact </h1>
 		
-		<div>
+		<div class="contact-info">
 			Timm Roemer
 			<br> Im Biengarten 16
 			<br> 64297 Darmstadt
@@ -29,11 +37,20 @@
 			<br> <a href="mailto:timm.roemer@dlh.de"> timm.roemer@dlh.de </a>
 		</div>
 		
-		<a href="mailto:timm.roemer@dlh.de"> Contact me </a>		
+		<div class="center">
+			<a href="mailto:timm.roemer@dlh.de" class="button"> Contact me </a>		
+		</div>
 		
-		<!--Telegram Icon-->
-			<a href="https://telegram.org/"> <img src="img/icon_telegram.svg" alt="follow me on telegram">
-		</a>
+		<div class="center">
+			<!--Telegram Icon-->
+			<a href="https://telegram.org/"> <img class="telegram" src="img/icon_telegram.svg" alt="follow me on telegram"> </a>
+		</div>
+		<!-- test icon <img class="TUD" src="img/TU_Darmstadt.svg" alt="TUD logo">-->
+	</div>  <!--closes wrapper for whole body of page-->
+
+	<script src="js/jquery-3.3.1.min.js"></script>	
+	<script src="js/scripts.js"></script>
+	
 	</body>
 	
 </html>

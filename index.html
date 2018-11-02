@@ -3,15 +3,21 @@
 <html lang="en" dir="ltr">
 
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="utf-8">
 		<title> Timm's little portfolio page </title>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
 	</head>
 	
 	<body>
+	
+	 <div class="wrapper"> <!--defines wrapper for whole body of page-->
 		<header>
-			<img src="img/ErgoTrack logo.png" alt="Logo">
+			<img class="logo" src="img/ErgoTrack_logo.png" alt="Logo">
 			<nav>
-				<ul> <!--Links to the subpages-->
+				<ul class="navigation"> <!--Links to the subpages-->
 					<li> <a href="index.html"> Home </a> </li>
 					<li> <a href="about.html"> About </a> </li>
 					<li> <a href="contact.html"> Contact </a> </li>
@@ -19,32 +25,60 @@
 			</nav>
 		</header>
 		
-		<p> Welcome to my little portfolio page! </p>
-		<h1> Hi, my name is Timm. <span> <i> I am a product developer and UX designer from Frankfurt. </i> </span> </h1>
+		<div class="page-heading">
+			<p> Welcome to my little portfolio page! </p>
+			<h1> Hi, my name is Timm. <span> <i> I am a product developer and UX designer from Frankfurt. </i> </span> </h1>
+		</div>
 		
-		<div> <!--container for the 4 columns of portfolio pieces-->
-			
-			<div> <!--first portfolio piece-->
-				<img src="img/user journey jack.png" alt="Work sample 1">
-				<h2> User journey </h2>
+		<div class="columns-container"> <!--container for the 4 columns of portfolio pieces-->
+			<h2> My work samples: </h2>
+			<div class="column-4"> <!--first portfolio piece-->
+				<div class="project-preview">
+					<img src="img/Iteration_of_wireframes.png" alt="Work sample 2">
+					<h2> Iteration of wireframes </h2>
+				</div>
+				<p class="project-details">
+					Here you see how the design of the wireframes evolved from the first paper sketch over mid-fidelity wireframes to polished high-fidelity mockups.
+				</p>
 			</div>
 			
-			<div> <!--2nd portfolio piece-->
-				<img src="img/Iteration of wireframes.png" alt="Work sample 2">
-				<h2> Iteration of wireframes </h2>
+			<div class="column-4"> <!--2nd portfolio piece-->
+				<div class="project-preview">
+					<img src="img/Dashboard.png" alt="Work sample 3">
+					<h2> Dashboard </h2>
+				</div>				
+				<p class="project-details">
+					This is the main screen of the app, the dashboard. Here, all parameters are displayed, icluding their current state and a small statistics graph.
+				</p>				
 			</div>
 			
-			<div> <!--3rd portfolio piece-->
-				<img src="img/Dashboard.png" alt="Work sample 3">
-				<h2> Dashboard </h2>
+			<div class="column-4"> <!--3rd portfolio piece-->
+				<div class="project-preview">
+					<img src="img/detail_view.png" alt="Work sample 1">
+					<h2> Single parameter detail view </h2>
+				</div>
+				<p class="project-details">
+					Whenever you click on one of the parameter tiles in the dashboard you'll be forwarded to the parameter detail view to retrieve in-depth information.
+				</p>
 			</div>
 			
-			<div> <!--4th portfolio piece-->
-				<img src="img/Onboarding.png" alt="Work sample 4">
-				<h2> Onboarding </h2>
+			<div class="column-4"> <!--4th portfolio piece-->
+				<div class="project-preview">
+					<img src="img/Onboarding.png" alt="Work sample 4">
+					<h2> Onboarding </h2>
+				</div>
+				<p class="project-details">
+					The onboarding screen is quite concise, yet it makes sure that new users understand what the app does. ALl the core functions are listed here. CTA buttons highlighted.
+				</p>
 			</div>
 
 		</div> <!--4 column container closed-->
+		
+	</div> <!--closes wrapper for whole body of page-->
+	
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/scripts.js"></script>
+	
 	</body>
 	
 </html>

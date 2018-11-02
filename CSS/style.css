@@ -1,0 +1,241 @@
+/*
+Colors used:
+
+Primary Color (brick): #EB7A42
+Secondary color (dark yellow): #DBB342
+Background1 (light grey): #f0f0ed
+Background 2 (white): #ffffff
+Fonts (black): #000000
+*/
+ 
+body {
+	background-color: #f0f0ed;
+	font-family: 'Montserrat', sans-serif;
+	color: #000000;
+	font-weight: 400;
+	font-size: 16px; /* Sets the font size to 16px */
+	line-height: 1.6; /* Sets the line-height to 1.6 */
+	}
+
+header {
+	padding: 10px 0;
+	border-bottom: 2px solid #EB7A42;
+	margin: 0 0 40px;
+}	
+	
+h1 {
+  font-size: 24px;
+  text-align: center; /* Centers text */
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+p {
+  margin: 10px 0;
+}
+
+a {
+  color: #EB7A42;
+}
+
+a:visited {
+  /* visited link */
+  color: #DBB342;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none; /* No underlining when hovering over a link */
+}
+
+a:active {
+  /* selected link */
+  color: #489c79;
+}
+
+.button {
+  /* overwrite browser defaults */
+  border: none; /* reset the border */
+  font-family: inherit; /* takes the font from the outer container */
+
+  /* style button */
+  background-color: #EB7A42;
+  color: #323232 !important; /* changed color to pass AA standard according to accessible-colors.com */
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #03474c; /* width of the border, type, color */
+  transition: 0.2s opacity;
+  display: inline-block;
+}
+
+.button:hover,
+.button:focus {
+  cursor: pointer; /* let's the mouse appear as hand when hovering over the button */
+  opacity: 0.8; /* Reduces the opactiy of the button to 80% */
+}
+
+/* Layout styling */
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+    width: 100%; 
+}
+
+.center {
+	text-align: center;
+	margin: 5px 0;
+}
+
+.logo {
+   max-width: 175px;
+}
+
+.navigation {
+  list-style-type: none;
+  padding: 0;
+  float: right;
+}
+
+.navigation > li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+  padding: 0 20px;
+}
+
+.columns-container {
+  font-size: 0;
+}
+
+.column-4 {
+  font-size: 16px;
+  width: 24%;
+  display: inline-block;
+  margin-right: 1%;
+  text-align: center; /* Centers text */
+  float: left; 
+}
+
+.column-4:last-child {
+margin-right: 0;
+}
+
+.telegram {
+    max-width: 80px; 
+}
+
+nav {
+	display: inline-block; 
+	float: right;
+ }
+
+.page-heading {
+		text-align: center;
+		padding: 10px 0 40px;
+} 
+
+.contact-info {
+		text-align: center;
+		padding: 5px 0;
+}
+
+@keyframes color-change {
+    0% {fill: #edc655;}
+    50% {fill: #fcffad;}
+    100% {fill: #f76414;}
+}
+	.sun {
+		animation: 4s color-change infinite alternate linear;
+	}
+
+@keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+}
+	.cloud-front {
+	animation: 30s cloud-move infinite alternate linear;
+	}
+
+@keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px, 48px);}
+}
+	.cloud-back {
+	animation: 34s cloud-move-reverse infinite alternate linear;
+	}
+
+@keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+}
+	.cloud-front {
+	animation: 30s cloud-move infinite alternate linear;
+	}
+
+@media all and (max-width: 500px) {
+  .logo {
+    /* Make logo smaller by changing it's width */
+    max-width: 150px;
+  }
+  h1 {
+    /* Reduce font-size of heading */
+    font-size: 20px;
+    text-align: left;
+  }
+  .column-4 {
+    /* Modify 4-column to 2-columns */
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+/* Task 2_3 additions */
+
+.project-details {
+  display: none;
+}
+
+/* Vertical align for slide-in text */
+.column-4 {
+  /* other rules... */
+  vertical-align:top;
+}
+
+
+/* Alternative for mouseover
+.column-4 {
+  position: relative;
+}
+
+.project-details {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0; /* Reset this to 0 */ /*
+  padding: 20px;
+  padding-top: 50px;
+  background: rgba(220, 170, 150, 0.9);
+}
+*/
